@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About Brew & Co. Learn our story, values, and the team behind your favorite cup." />
+  <title>Brew & Co. Coffee - About</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --primary:#3E2A1B; --secondary:#8B5A2B; --accent:#D4A373; --glass-bg: rgba(20,15,10,.7); --glass-border: rgba(139,90,43,.25); }
+    .glass { background: var(--glass-bg); border:1px solid var(--glass-border); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius:14px; padding:1rem; }
+    .glass-card{ background: rgba(20,15,10,.4); border:1px solid rgba(139,90,43,.25); border-radius:14px; padding:1rem; }
+    .glass-nav{ background: rgba(20,15,10,.4); border-bottom:1px solid rgba(139,90,43,.25); }
+  </style>
+</head>
+<body class="bg-black text-white min-h-screen">
+  <nav class="glass-nav fixed w-full z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold gradient-text">Brew & Co</a>
+      <div class="hidden md:flex space-x-6 text-lg">
+        <a href="index.html" class="magnetic">Home</a>
+        <a href="menu.html" class="magnetic">Menu</a>
+        <a href="about.html" class="magnetic">About</a>
+        <a href="contact.html" class="magnetic">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" class="min-h-screen flex items-center justify-center" style="padding-top:70px;">
+    <div class="text-center px-4 max-w-3xl">
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-4" data-animate="words">Our Story</h1>
+      <p class="text-lg md:text-xl text-gray-300 mb-6">From humble beans to welcoming spaces, Brew & Co. is built on craft, community, and care for the planet.</p>
+    </div>
+  </section>
+
+  <section class="py-12 px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="glass-card">
+        <h3 class="text-xl font-semibold mb-2">Our Values</h3>
+        <p class="text-sm text-gray-300">Quality first, sustainability always, and hospitality at heart.</p>
+      </div>
+      <div class="glass-card">
+        <h3 class="text-xl font-semibold mb-2">Team</h3>
+        <p class="text-sm text-gray-300">Roasters, baristas, and cafe managers dedicated to your experience.</p>
+      </div>
+      <div class="glass-card">
+        <h3 class="text-xl font-semibold mb-2">Community</h3>
+        <p class="text-sm text-gray-300">Hosting events, music nights, and local collaborations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-8 px-4 bg-gray-900/40">
+    <div class="max-w-6xl mx-auto flex items-center gap-6">
+      <div class="w-24 h-24 rounded-full bg-gradient-to-tr from-yellow-400 to-orange-500 flex items-center justify-center text-2xl">☕</div>
+      <div class="text-gray-300">Meet our head roaster, baristas, and cafe team dedicated to crafting your next great coffee moment.</div>
+    </div>
+  </section>
+
+  <footer class="py-8 text-center text-gray-400">© 2025 Brew & Co. All rights reserved.</footer>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function initGlassmorphism(){ const s=document.createElement('style'); s.id='glassmorphism-styles'; s.textContent=`.glass { background: rgba(10,10,10,.55); border:1px solid rgba(255,255,255,.15); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);} .glass-card{ background: rgba(10,10,10,.4); border:1px solid rgba(255,255,255,.15); border-radius:14px; padding:1rem; } .glass-nav{ background: rgba(10,10,10,.4); }`; document.head.appendChild(s);} window.addEventListener('load', ()=>{ initGlassmorphism(); });
+
+    function initAll(){ }
+    window.addEventListener('load', ()=>{ initAll(); });
+  </script>
+</body>
+</html>
