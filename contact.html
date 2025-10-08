@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Brew & Co. Reach us for reservations, inquiries, or events." />
+  <title>Brew & Co. Coffee - Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --primary:#3E2A1B; --secondary:#8B5A2B; --accent:#D4A373; --glass-bg: rgba(20,15,10,.7); --glass-border: rgba(139,90,43,.25); }
+    .glass { background: var(--glass-bg); border:1px solid var(--glass-border); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius:14px; padding:1rem; }
+    .glass-nav { background: rgba(20,15,10,.4); border-bottom:1px solid rgba(139,90,43,.25); }
+  </style>
+</head>
+<body class="bg-black text-white min-h-screen">
+  <nav class="glass-nav fixed w-full z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold gradient-text">Brew & Co</a>
+      <div class="hidden md:flex space-x-6 text-lg">
+        <a href="index.html" class="magnetic">Home</a>
+        <a href="menu.html" class="magnetic">Menu</a>
+        <a href="about.html" class="magnetic">About</a>
+        <a href="contact.html" class="magnetic">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" class="min-h-screen flex items-center justify-center" style="padding-top:70px;">
+    <div class="text-center px-4 max-w-2xl">
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Get in touch</h1>
+      <p class="text-lg text-gray-300 mb-6">We’d love to hear from you. Message us below or visit us in-person.</p>
+    </div>
+  </section>
+
+  <section class="py-12 px-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+      <form class="glass-card" onsubmit="return false;">
+        <div class="grid grid-cols-1 gap-4">
+          <input class="p-3 rounded bg-black text-white border border-gray-700" placeholder="Your Name" required />
+          <input class="p-3 rounded bg-black text-white border border-gray-700" placeholder="Email" type="email" required />
+          <textarea class="p-3 rounded bg-black text-white border border-gray-700" placeholder="Message" rows="5" required></textarea>
+          <button class="p-3 rounded glass-button" style="background: rgba(10,10,10,.4); border:1px solid rgba(139,90,43,.25);">Send Message</button>
+        </div>
+      </form>
+      <div class="glass-card">
+        <h3 class="text-xl font-semibold mb-2">Visit Us</h3>
+        <p class="text-sm text-gray-300">123 Brew Street, Caffeine City</p>
+        <p class="text-sm text-gray-300">Mon–Fri: 7am–8pm</p>
+        <p class="text-sm text-gray-300">Sat–Sun: 8am–9pm</p>
+        <div class="mt-4" style="width:100%; height:180px; background: #111; border-radius:8px; display:flex; align-items:center; justify-content:center; color:#888;">Map placeholder</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8 text-center text-gray-400">© 2025 Brew & Co. All rights reserved.</footer>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function initGlassmorphism(){ const s=document.createElement('style'); s.id='glassmorphism-styles'; s.textContent=`.glass { background: rgba(10,10,10,.55); border:1px solid rgba(255,255,255,.15); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);} .glass-card{ background: rgba(10,10,10,.4); border:1px solid rgba(255,255,255,.15); border-radius:14px; padding:1rem; }`; document.head.appendChild(s);} window.addEventListener('load', ()=>{ initGlassmorphism(); });
+    function initAll(){ }
+    window.addEventListener('load', ()=>{ initAll(); });
+  </script>
+</body>
+</html>
